@@ -1,0 +1,31 @@
+<div class="feed-item" id="{{dashcase id}}">
+  <div class="share-links">
+    <a class="share-links__link share-links__link--twitter" href="https://twitter.com/intent/tweet?&amp;text=%23Brexit%20impact%20on%20{{encodeURI company}}%20–%20{{encodeURI collection1}}{{#if collection2}}%2C%20{{encodeURI collection2}}{{/if}}&amp;url={{encodeURI 'https://ig.ft.com/sites/brexit-companies/#'}}{{encodeURI (dashcase id)}}&amp;related=%40FT&amp;via=FT"><span>Tweet</span>
+    </a>
+
+
+  </div>
+  <div>
+    <time class="article__timestamp">
+      {{moment timestamp format="MMMM D, YYYY"}}
+    </time>
+  </div>
+  <div>
+    <small>
+      <span class="collection1">{{collection1}}</span>{{#if collection2}},{{/if}}
+
+      {{#if profitwarning.date}}{{moment profitwarning.date format="MMMM D, YYYY"}}{{/if}}
+
+      {{#if collection2}}<span class="collection2">{{collection2}}</span>{{/if}}
+    </small>
+  </div>
+  <div class="company__holder">
+    <h2 class="company">{{company}}</h2>
+  </div>
+
+  <p>
+    {{{copy}}}
+  </p>
+
+  {{#if story.url}}<a href="{{story.url}}"class="story-link">Read full article</a>{{/if}}
+</div>

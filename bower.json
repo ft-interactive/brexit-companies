@@ -1,0 +1,8 @@
+{
+  "name": "bare-metalsmith",
+  "dependencies": {
+    "o-colors": "^3.4.1",
+    "o-grid": "^4.2.0",
+    "sass-mq": "~3.2.9"
+  }
+}

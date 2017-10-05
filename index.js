@@ -71,7 +71,7 @@ metalsmith(__dirname)
   .use(sass(sassOptions))
   .use(babel(babelOptions))
   .use(ignore(ignoreOptions))
-  .use(browsersync(browsersyncOptions))
+  .use(process.env.DEVSERVER && browsersync(browsersyncOptions))
   .build((err) => {
     if (err) {
       throw err;

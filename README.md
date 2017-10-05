@@ -11,6 +11,9 @@ Metalsmith project based on the FT's [bare-metalsmith](https://github.com/ft-int
 1. `git clone https://github.com/ft-interactive/bare-metalsmith.git my-static-site && cd my-static-site`
 2. `npm install`
 
+## Build and serve (in development)
+`npm start`
+
 ## Build
 `npm run build`
 
